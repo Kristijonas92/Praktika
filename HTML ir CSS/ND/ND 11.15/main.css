@@ -1,0 +1,24 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: #D8AA96;
+    display: grid;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100vh;
+    justify-items: center;
+    
+}
+
+h1 {
+    display: inline-block;
+    font-size: 24px;
+}
+

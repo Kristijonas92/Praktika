@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 paskaita - Box model</title>
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="./Wings.png" alt="pageLogo">
+                </a>
+            </div>
+            <div class="mainMenu">
+                <!-- ul>li*5>a.link -->
+                <ul>
+                    <li><a href="#boxModel" class="link">Box Model</a>
+                    </li>
+                    <li>Selectors<a href="#selectors" class="link"></a></li>Background<li><a href="bacground"
+                            class="korteles">Cards</a></li>
+                    <li><a href="" class="semantic">Semantic</a></li>
+                    <li><a href="#semantic" class="link"></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- 
+        Box model
+        Selectors
+        Background
+        Semantic tags
+        Menu
+        Paga
+     -->
+        <div id="boxModel">
+            <h1>Box Model</h1>
+            <ol>
+                <li>Content - Turinys</li>
+                <li>Padding - Pamušalas</li>
+                <li>Border - Rėmelis</li>
+                <li>Margin - Paraštė</li>
+                <li>Position - Pozicija</li>
+            </ol>
+        </div>
+        <div class="boxModelPvz">Box Modelis Pavyzdys</div>
+        <div>
+            <!--Content-->
+            <h2>Content</h2>
+            <p>
+                Turinys - dėžutės modelio vidurinė dalis, kurioje yra atvaizduojama informacija vartotojui.
+            </p>
+        </div>
+        <div>
+            <!--Padding-->
+            <h2>Padding</h2>
+            <p>
+                Pamušalas - pirmasis turinio sluoksnis, kuris nurodo per kokį atstumą turinys bus atitrauktas nuo
+                rėmelio.<br>
+                Pmušalas yra vizualiaia matomas vartotojui ir reaguoja į vartotojo interakciją.
+            </p>
+            <ul>
+                <li>padding: top/right/bottom/left;</li>
+                <li>padding: top/bottom right/left;
+                </li>
+                <li> padding: top right/ left bottom;</li>
+                <li>padding: top-right botom-left</li>
+                <li>padding-top: top;</li>
+                <li>padding-right: right;</li>
+                <li>padding-bottom: bottom;</li>
+                <li>padding-left: left;</li>
+            </ul>
+        </div>
+        <div>
+            <!--Borders-->
+            <h2>Borders</h2>
+            <p>
+                Rėmelis yra antrasis turinio sluoksnis, kuris turi plotį, tipą ir spalvą. Ir jo pločio nustatymas
+                nurodo, kokiu atstumu bus atskirtas Margin ir Padding.<br>
+                Rėmelis yra vizualiai matomas vartotojui ir reaguoja į vartotojo interakcijas.
+            </p>
+            <ul>
+                <li>border: width style color</li>
+                <li>border-width: width;</li>
+                <li>boder-style: style;</li>
+                <li>border-color: color;</li>
+
+                <li>border-top/right/bottom/left-width/style/color;</li>
+                <li>border-radius: radius;</li>
+                <li>border-corner-radius: radius</li>
+            </ul>
+        </div>
+        <div>
+            <!--Margin-->
+            <h2>Margin</h2>
+            <p>
+                Paraštė yra trečiasis turinio sluoksnis, kuris nurodo per kokį atstumą nuo rėmelio bus atitraukti kiti
+                aplinkiniai elementai.<br>
+                Margin nėra vizualiai matomas vartotojui ir nereaguoja į vartotojo interakcijas.
+            </p>
+            <ul>
+                <li>margin: top/right/bottom/left</li>
+                <li>margin: top/bottom right/left;</li>
+                <li>margin: top right/left bottom;</li>
+                <li>margin: top right bottom left;</li>
+                <li>margin-top: top;</li>
+                <li>margin-right: right;</li>
+                <li>margin-bottom: bottom;</li>
+                <li>margin-left: left;</li>
+            </ul>
+            <div>
+                <h2>Position</h2>
+                <p>
+                    Pozicija - nurodo kaip elementas bus pozicionuotas puslapyje. For more info: <a
+                        href="../3 Paskaita 2022-11-09 CSS Įvadas/index.html#positions" target="_blank">click me</a>
+                </p>
+            </div>
+        </div>
+        <div id="selectors">
+            <h1>Selectors</h1>
+            <ul>
+                <li>*-visko</li>
+                <li>selector, selector - keletas selektorių</li>
+                <li>element1/class1/id1 element2/class2/id2 - element1/class1/id1 betkur viduje esantis
+                    element2/class2/id2</li>
+                <li>element1/class1/id1 element2/class2/id2 - element1/class1/id1 iš karto viduje esantis
+                    element2/class2/id2</li>
+                <li>:hover - ant element užėjes kursorius</li>
+            </ul>
+            <div>
+                <ul>
+                    <li>labas</li>
+                    <li>labas</li>
+                </ul>
+            </div>
+            <ul>
+                <li>me too</li>
+                <li>me too</li>
+                <li>me too</li>
+            </ul>
+        </div>
+        <div id="backgrouds">
+            <h1>Fonai</h1>
+            <div class="fonas1">fonas1</div>
+            <div class="fonas2">
+                <div class="bg_op"></div> fonas2
+            </div>
+            <div class="fonas3"><img src="./101.jpg">fonas3</div>
+            <div class="fonas4">fonas4</div>
+            <div class="fonas5">fonas5</div>
+            <div class="fonas6">fonas6</div>
+            <div class="fonas7">fonas7</div>
+        </div>
+        <div id="semantic">
+            <h1>Semantiniai tag'ai</h1>
+            <p>
+                Semantiniai tag'ai yra naudojami tam, kad vien perskaicius tag'o pavadinimą, būtų daugiau mažiau aišku,
+                kam jo viduje esanti informacija naudojama.
+            </p>
+            <ul>
+                <li>header</li>
+                <li>nav</li>
+                <li>main</li>
+                <li>aside</li>
+                <li>section</li>
+                <li>article</li>
+                <li>footer</li>
+            </ul>
+            <p>
+                Header - viršutinė puslapio dalis, kurioje būna: logotipas,menu, paieškos sistema, prisijungimas/
+                registracija, profilio.
+            </p>
+            <p>
+                Nav - navigation - menu. Pagrindinis puslapio menu būna header'io viduje. Bet puslapis gali turėti
+                pagalbinius menu (papildomus nav tag'us)
+            </p>
+            <p>
+                Main - pagrindinė turinio vieta puslapyje. Jo viduje būna sekcijų, straipsnių, net ir kitų asid'ų.
+            </p>
+            <p>
+                Aside - šoninė sekcija esanti šalimais pagrindinio
+                turinio arba esanti pagrindinio turinio viduje.
+            </p>
+            <p>
+                Sectin/Article - sekcija/straipsnis pagrindinio turinio turinio viduje skirsto informaciją į
+                sekcijas/straipsnius.
+            </p>
+            <p>
+                Footer - apatinė puslapio dalis, kurioje būna: copyrights, data, kūrėjas/savininkas, terms and
+                konditions, services, privacy policy, cookies, partneriai, remėjas, kontaktai, social media...
+            </p>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

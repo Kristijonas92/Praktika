@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    height: 500px;
+    align-items: stretch;
+    background-color: rgb(17, 40, 109);
+    justify-content: space-around;
+}
+
+main div {
+    margin: 5px;
+
+}
+
+.kvadratas2 {
+    flex: 1 1 100px;
+
+}
+.kvadratas3 {
+    flex: 1 1 100px;
+
+}
+.kvadratas4 {
+    flex: 1 1 100px;
+
+}
+
+.img {
+    flex: 2;
+    background-image: url(https://api.time.com/wp-content/uploads/2017/12/terry-crews-person-of-year-2017-time-magazine-2.jpg?quality=85&w=2036);
+    background-size: cover;
+    background-position:center;
+    height: 70%;
+    width: 100%;
+    
+}

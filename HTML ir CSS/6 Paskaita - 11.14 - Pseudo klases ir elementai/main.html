@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 paskaita - Pseudo klases ir elementai</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- 
+        Pseudo klases ir elementai
+        Multimedijos elementai
+        Lenteles su pseudo klasem/elementais
+        Formos su pseudo klasem/elementais
+        Animacija ir perejimas
+     -->
+    
+     <main>
+            <section id="pseudoSelektoriai">
+                <h1>
+                <a href="https://www.w3schools.com/csSref/css_selectors.php" target="_blank">Pseudo Selektoriai</a>
+                </h1>
+                <ul>
+                    <li>*</li>
+                    <li>element</li>
+                    <li>.class</li>
+                    <li>#id</li>
+                    <li>selector1, selector2</li>
+                    <li>selector1 selector2</li>
+                    <li>selector1 > selector2</li>
+                    <li>element.class#id - elementas turintis nurodytą klasę/es ir/arba nurodytą id</li>
+                    <li>selector1 + selector2 - iš karto už selector1 einantis selektor2 (tame pačiame lygyje)</li>
+                    <li>selector1 ~ selector2 - už selector1 visi einantys selector2 (tame pačiame lygyje)</li>
+                    <li>[attribute] - atributas</li>
+                    <li>[attribute=value] - atributas turintis nurodytą reikšmę</li>
+                    <li>[attribute~=value] - atributas, kurio reikšmėje yra nurodytas žodis</li>
+                    <li>[attribute*=value] - atributas, kurio reikšmėje yra nurodyta žodio dalis</li>
+                    <li>[attribute|=value] - atributas, kurio reikšmė yra value arba value-kazkas</li>
+                    <li>[attribute^=value] - atributas, kurio reikšmė prasideda value...</li>
+                    <li>[attribute$=value] - atributas, kurio reikšmė pasibaigia ...value</li>
+                    <li>:link - paprasta/nelankyta nuoroda</li>
+                    <li>:visited - lankyta nuoroda</li>
+                    <li>:hover - užėjęs kursorius</li>
+                    <li>:active - aktyvi (paspaudimo momento) nuoroda</li>
+                    <li>element:empty - tuščias elementas (be content)</li>
+                    <li>::marker - sąrašo elementų žymės</li>
+                    <li>:not(selector) - neparenka nurodyto selektoriaus</li>
+                    <li>:first-child - parenka pirmąjį vaikinį elementą</li>
+                    <li>:last-child - parenka paskutinįjį vaikinį elementą</li>
+                    <li>:only-child - parenka vienintelį vaikinį elementą (jeigu jis yra vienas)</li>
+                    <li>:first-of-type - parenka pirmąjį nurodyto tipo elementą</li>
+                    <li>:last-of-type - parenka paskutinįjį nurodyto tipo elementą</li>
+                    <li>:only-of-type - parenka vienintelį nurodyto tipo elementą</li>
+                    <li>:nth-child(n) - parenka nurodytą/us vaikinį/ius elementą/us</li>
+                    <li>:nth-last-child(n) - nuo galo parenka nurodytą/us vaikinį/ius elementą/us</li>
+                    <li>:nth-of-type(n) - parenka nurodytą/us elementą/us pagal tipą</li>
+                    <li>:nth-last-of-type(n) - nuo galo parenka nurodytą/us elementą/us pagal tipą</li>
+                    <li>::marker - sąrašo elementų žymės</li>
+                    <li>::before - sukuria kažkokį turinį prieš elementą</li>
+                    <li>::after - sukuria kažkokį turinį už elemento</li>
+                    <li>input:checked - pažymėtus/parintkus radio/checkbox/option pasirinkimus</li>
+                    <li>input:default - iš anksto parinktas pasirinkimas</li>
+                    <li>input:disabled - input'as, kuris turi disabled atributą</li>
+                    <li>input:enabled - input'as, kuris neturi disabled atributo</li>
+                    <li>input:focus - input'as, ant kurio yra paspausta / fokusuotas</li>
+                    <li>input:in-range - input'as, kurio vertė yra nurodytose ribose</li>
+                    <li>input:out-of-range - input'as, kurio vertė yra už nurodytų ribų</li>
+                    <li>input:indeterminate - input'as, kurio reikšmė neapibrėžta</li>
+                    <li>input:invalid - input'as, kurio vertė yra netinkama</li>
+                    <li>input:valid - input'as, kurio vertė yra tinkama</li>
+                    <li>input:required - input'as su required atributu</li>
+                    <li>input:optional - input'as be required atributo</li>
+                    <li>input:read-only - input'as su readonly atributu</li>
+                    <li>input:read-write - input'as be readonly atributo</li>
+                    <li>input::placeholder - Įvesties laukelio placeholder atributo reikšmės parinkimas stilizavimui</li>
+                    <li>element::first-letter - parenka elemento pirmąją raidę</li>
+                    <li>element::first-line - parenka elemento pirmąją eilutę</li>
+                    <li>::selection - parenka vartotojo pažymėtą informaciją</li>
+                    <li>:is()</li>
+                    <li>:has()</li>
+                    <li>:where()</li>
+
+                </ul>
+                <div class="selektoriuPvz">
+                    <p class="rytoTekstas" id="hallo">labas rytas</p>
+                    <p>tekstas</p>
+                    <h1>tekstas more</h1>
+                    <p>tekstas more and more</p>
+                    <h1 class="heading ir Dar">tekstas more2</h1>
+                    <div>
+                        <p>labas</p>
+                    </div>
+                    <p>tekstas more and more2</p>
+                    <p>labas rytas</p>
+                </div>
+            </section>
+            <section id="multimedija">
+                <h1>Multimedija</h1>
+                <p>
+                    Inframe - skirtas ikelti kitos svetaines dali, arba visa svetaine i savo svetaine
+                </p>
+                <div id="video">
+                    <!-- <video controls>
+                        <source>
+                        <source>
+                        <source>
+                    </video>
+                    <video src=""></video> -->
+                    <iframe width="800" height="500" src="https://www.youtube.com/embed/1qRPkqXGBsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="audio">
+                        <audio controls>
+                            <source type="audio/mp3">
+                            <source>
+                            <source>
+                        </audio>
+                        <audio src=""></audio> -->
+
+                    </div>
+                    <div id="maps">
+                        <div id="maps">JS prijungti</div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.26437709392!2d9.107692330433629!3d45.462712448111006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c14a7793f401%3A0xbabd40b5b7b71b1f!2sMiele%20Experience%20Center%20Milano!5e0!3m2!1slt!2slt!4v1668415571115!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div id="page">
+                        <iframe src="https://lrs.lt/" 
+                        height="400"
+                        width="400" frameborder="0"></iframe>
+                    </div>
+            </section>
+<div class="table">
+            <table border>
+                <caption align="top"></caption>
+                <colgroup>
+                <col span="" style=>
+                <col span="" style=>
+        
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>43531</th>
+                        <th>351651</th>
+                        <th>3518168</th> 
+                        <th>31616</th>
+                        <th>651816</th>
+                    </tr>
+        
+                </thead>
+                <tbody >
+                    <tr class="tr">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                    </tr>
+        
+                    <tr>
+                    <td>86464564</td>
+                    <td>645654</td>
+                    <td>54646</td>
+                    <td>434345</td>
+                    <td>4343434</td>
+                    
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td>45343435543</td>
+                    <td>53434354</td>
+                    <td>76768786</td>
+                    <td>7/7/9</td>
+                    <td>78676767/</td>
+                
+                </tfoot>
+             </table>
+</div>
+     </main>
+</body>
+</html>

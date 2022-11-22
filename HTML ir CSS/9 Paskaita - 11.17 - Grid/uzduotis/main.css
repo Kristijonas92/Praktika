@@ -1,0 +1,54 @@
+#main {
+  display: grid;
+  background-color: rgb(246, 246, 246);
+  grid-template-columns: repeat(12, 100px);
+  grid-template-rows: repeat(13, 100px);
+  margin: 50px;
+  width: auto;
+  z-index: -10;
+  position: relative;
+  column-gap: 1px;
+  justify-content: stretch;
+}
+main {
+  width: auto;
+}
+  
+
+.text {
+  background-color: rgba(255, 255, 255, 0.933);
+
+}
+.book1 {
+  grid-area: 3 / 2 / 7 / 6 ;
+}
+.book2 { 
+  grid-area: 3/ 8 / 7 / 12;
+}
+.book3 {
+  grid-area: 9 / 2 / 13 /  6 ;
+
+}
+.book4 {
+  grid-area: 9 / 8  / 13 / 12 ;
+}
+img {
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  z-index: -5
+}
+.fountain1 {
+  grid-area: 2 / 3 / 6 / 7 ;
+}
+.fountain2 {
+  grid-area: 2 / 7 / 2 / 11;
+}
+.fountain3 {
+  grid-area: 8 / 3 / 12 / 7;
+}
+.fountain4 {
+  grid-area: 8 / 7 / 12 / 11;
+}
+

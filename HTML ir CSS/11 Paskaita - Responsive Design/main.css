@@ -1,0 +1,187 @@
+@import url(github.com/necolas/normalize.css);
+body{
+    background-color: rgb(255, 173, 173);
+}
+
+#breakpoints{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/* task 1 */
+#task1 h1{
+
+}
+
+#task1 > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#task1 > div > div{
+    height: 400px;
+    width: 200px;
+    border: 3px solid black;
+}
+
+.name2{
+    display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 1020px){
+body{
+    background-color: rgb(166, 255, 255);
+
+}
+.name1{
+    display: none;
+}
+.name2{
+    display: none;
+
+}
+
+#task1 > div{
+    display: grid;
+    justify-items: end;
+    gap: 5px;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+
+#task1 > div :nth-child(1), #task1 > div :nth-child(2){
+    height: 200px;
+    width: 400px;
+}
+
+#task1 > div :nth-child(3){
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+
+}
+
+@media (max-width: 678px){
+    body{
+        background-color: rgb(157, 255, 255);
+    }
+    #breakpoints{
+        display: block;
+    }
+
+    #breakpoints > div{
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    .name2{
+        display: none;
+    }
+
+    .name3{
+        display: block;
+    }
+
+    #task1 > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #task1 > div :nth-child(3){
+        height: 200px;
+        width: 400px;
+    }
+}
+
+
+
+#site {
+    height: 800px;
+    width: 800px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: 2fr 6fr repeat(3, 3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .header {
+        
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #ffa500;
+    
+    }
+    .menu {
+        
+        grid-area: 1 / 2 / 2 / 4;
+        background-color: red;
+    
+    }
+    .hero {
+        
+        grid-area: 2 / 1 / 3 / 4;
+        background-color: aqua;
+    
+    }
+    .main { 
+        
+        grid-area: 3 / 1 / 5 / 2;
+        background-color: mediumseagreen;
+    
+    }
+    .image {
+        
+        grid-area: 3 / 3 / 4 / 4;
+        background-color: crimson;
+
+    }
+
+    .extra {
+        
+        grid-area: 4 / 3 / 5 / 4;
+        background-color: peru;
+
+    }
+    .banner {
+        
+        grid-area: 5 / 1 / 6 / 4;
+        background-color: rgb(116, 139, 0);
+
+    }
+
+
+    /* task 2 */
+
+    #task2{
+        display: flex;
+        height: 200px;
+        width: 400px;
+        flex-direction: row;
+    }
+
+    @media (max-width: 678px){
+        #task2{
+            display: block;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        #task2 > div{
+        width: 80%;
+        margin: 0 auto;
+        }
+    
+
+    }

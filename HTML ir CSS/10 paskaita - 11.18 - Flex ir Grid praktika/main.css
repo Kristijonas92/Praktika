@@ -1,0 +1,137 @@
+/* task1 flex */
+#task1 .flex :not([class]) {
+    background-color: #ffa500;
+}
+  #task1 > .flex div{
+    flex: 1;
+}
+  /* task1 grid */
+  #task1 .grid :not([class]) {
+    background-color: #5efffc;
+}
+  #task1 > .grid{
+    display: grid;
+    gap: 1px;
+    grid-template: 1fr 1fr / 2fr 1fr 1fr;
+}
+  #task1 :nth-child(1) {
+    grid-area: 1 / 1 / 3 / 2;
+}
+  #task1 :nth-child(2) {
+    grid-area: 1 / 2 / 2 / 4;
+}
+  
+  /* task3 */
+  #task3 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+
+  #task3 > div {
+    height: 300px;
+    width: 300px;
+}
+
+.task31 {
+    height: 600px;
+    width: 600px;
+    display: grid;
+    background-color: rgb(171, 251, 242);
+    grid-template-columns: repeat(2, 3fr) repeat(2, 3fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+#site {
+    height: 800px;
+    width: 800px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: 2fr 6fr repeat(3, 3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .header {
+        
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #ffa500;
+    
+    }
+    .menu {
+        
+        grid-area: 1 / 2 / 2 / 4;
+        background-color: red;
+    
+    }
+    .hero {
+        
+        grid-area: 2 / 1 / 3 / 4;
+        background-color: aqua;
+    
+    }
+    .main { 
+        
+        grid-area: 3 / 1 / 5 / 2;
+        background-color: mediumseagreen;
+    
+    }
+    .image {
+        
+        grid-area: 3 / 3 / 4 / 4;
+        background-color: crimson;
+
+    }
+
+    .extra {
+        
+        grid-area: 4 / 3 / 5 / 4;
+        background-color: peru;
+
+    }
+    .banner {
+        
+        grid-area: 5 / 1 / 6 / 4;
+        background-color: rgb(116, 139, 0);
+
+    }
+
+    #bloom {
+        height: 1000px;
+        width: auto;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 2fr repeat(9, 1fr);
+        grid-template-rows: 5fr repeat(4, 10fr) 20fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .bloom1 { grid-area: 1 / 1 / 2 / 20;
+            align-self: center;
+            background-color: #393939;
+        }
+
+        .bloom2 { grid-area: 2 / 1 / 4 / 20;
+            background-color: rgb(202, 202, 202);   
+        }
+
+        .img{
+            float: right;
+        }
+
+
+        .bloom3 { grid-area: 4 / 1 / 6 / 20;
+            background-color: white;
+        }
+
+        .bloom4 { grid-area: 6 / 1 / 7 / 20;
+            background-color: #393939;
+        }

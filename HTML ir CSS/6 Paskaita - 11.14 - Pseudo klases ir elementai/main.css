@@ -1,0 +1,82 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+p.rytoTekstas#hallo{
+    font-weight: bold;
+}
+
+.rytoTekstas + p{
+color: red;
+}
+
+
+h1.heading ~ *{
+    background-color: aqua;
+
+}
+
+/* [href]{
+    color:rgb(255,175, 0);
+} */
+
+[class$=head]{
+    color: blue;
+}
+
+a:link{
+    background-color: aqua;
+}
+
+a:visited{
+    background-color: yellow;
+}
+a:hover{background-color: green;}
+
+a:active{
+    background-color: black;
+}
+
+p:empty{
+    height: 10px;
+    background-color: blueviolet;
+}
+
+li{
+    color: orange;
+}
+
+li::marker{
+    color: black;
+}
+
+.selektoriuPvz > :not(div){
+    background-color: blanchedalmond;
+}
+
+#selektoriuPvz :nth-child(2n+1){
+color: green;
+}
+
+li::marker{
+    color: red;
+}
+
+    li::before{
+        content: "(:";
+        color: black;
+        font-size: 30px;
+    }
+
+    li::after{
+        content: "(:";
+        color: black;
+        background-color: orange;
+    }
+
+
+    .table :nth-child(3n){
+        color: rgb(255, 0, 234);
+    }
+    
+    .table:first-child{
+        color: goldenrod;
+    }

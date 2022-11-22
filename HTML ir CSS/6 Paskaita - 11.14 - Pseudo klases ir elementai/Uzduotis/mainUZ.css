@@ -1,0 +1,18 @@
+.logo{
+text-align: center;
+}
+
+.logo img{
+    height: 50px;
+    width: auto;
+}
+
+.menu{
+    text-align: center;
+    background-color: green;
+    text-decoration: none;
+}
+    
+.desert{
+    background-color: rgb(208, 208, 208);
+}

@@ -1,0 +1,10 @@
+.office{
+    height: 125px;
+    width: auto;
+    background-color: #9ACD32;
+    display: flex;
+}
+
+.green{
+  align-content: center;
+}

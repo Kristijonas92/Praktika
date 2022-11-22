@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 paskaita - HTML Įvadas</title>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/874/257/png-transparent-whatsapp-computer-icons-computer-software-whatsapp-text-logo-whatsapp-icon-thumbnail.png">
+</head>
+<body>
+    <div><!-- kas bus siame konteineryje --></div>
+ <div>
+
+   
+<h1>Stilizavimo tag'ai</h1>
+<ul>
+    <li>b - bold - Pastorina tekstą</li>
+    <li>Strong - Pastorina tekstą</li>
+    <li>i - Italic - Suteikia tekstui pasvyrimo stilių </li>
+    <li>em - emphasis - Suteikia tekstui pasvyrimo stilių (Svarbu semantiškai)</li>
+    <li>small - Sumažina tekstą</li>
+    <li>big - Padidina tekstą (Pasenęs - nenaudojamas)</li>
+    <li>sup - superscript - Pakelia tekstą į viršų ir jį sumažina</li>
+    <li>sub - subscript - Nuleidžia tekstą į apačią ir jį sumažina</li>
+    <li>Spun - išskiria kažkokį elemantą ar jo dalį</li>
+
+
+
+
+
+</ul>
+<p>Lorem <b>ipsum</b> dolor <strong>sit</strong>  <big>amet</big>  consectetur adipisicing <small>elit</small>.  Dolor hic pariatur commodi?<sup>Sequi</sup>  et officiis <sub>corrupti</sub> , reiciendis neque <spun>voluptate</spun>  beatae vero illo, dolore fugiat, omnis ex eaque quis. Deleniti, ullam.</p>
+
+    </div>
+<div><!-- Lentelės --></div>
+    <div> 
+<h1>Lentelės</h1>
+<ul>
+<li>Table - Lentelė</li>
+<li>Thead - Table head - Lentelės viršus / pirmoji eilutė</li>
+<li>tfoot - Table foot - lentelės apačią / paskutinė eilutė</li>
+<li>tbody - Table body - Lentelės kūnas/duomenys</li>
+<li>tr - Table row - lentelės eilutė</li>
+<li>th - Table Heading - Lentelės antraštė (stulpelio/eilutės pavadinimas)</li>
+<li>td - Table data - Lentelės duomo</li>
+<li>caption - lentelės pavadinimas</li>
+<li>colgroup - Column Group - Stulpelių grupės</li>
+<li>col - column - Stulpelis</li>
+
+
+
+     </ul>
+     
+     <table border>
+        <caption align="top">Asmenys</caption>
+        <colgroup>
+        <col span="3" style="background-color: rgb(214, 255, 148);">
+        <col span="2" style="background-color: rgb(214, 255, 148);">
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Vardas</th>
+                <th>Amžius</th>
+                <th>Ūgis</th> 
+                <th>Plaukų spalva</th>
+                <th>Akių spalva</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kristijonas</td>
+                <td>29</td>
+                <td>193</td>
+                <td>Juoda</td>
+                <td>Žalia</td>
+            </tr>
+            <tr>
+                <td>Petras</td>
+                <td>99</td>
+                <td>150</td>
+                <td>Oranžinė</td>
+                <td>Ruda</td>
+            </tr>
+
+            <tr>
+            <td>Jonas</td>
+            <td>55</td>
+            <td>150</td>
+            <td>Mėlyna</td>
+            <td>Mėlyna</td>
+            
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>3</td>
+            <td>60</td>
+            <td>162</td>
+            <td>*</td>
+            <td>*</td>
+        
+        </tfoot>
+     </table>
+
+
+
+
+     <caption align="top">Vietos</caption>
+     <table border>
+        <thead>
+            <tr>
+                <th>Nr</th>
+                <th>Šalys</th>
+                <th>Buvau/Nebuvau</th>
+                <th>Paveiksliukas</th> 
+                <th>Nuoroda</th>
+                
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Japonija</td> 
+                <td>Nebuvau</td>
+                <td><img src="https://www.planetware.com/wpimages/2020/08/japan-best-cities-tokyo.jpg" height="200px" width="200"></td>
+                <a href=""></a>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Italija</td>
+                <td>Buvau</td>
+                <td><img src="https://static.euronews.com/articles/stories/05/43/01/18/400x225_cmsv2_61438a3f-ea37-5b7c-aee1-f743502f9df7-5430118.jpg" height="200px" width="200"></td>
+
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Ispanija</td>
+                <td>Nebuvau</td>
+                <td><img src="https://estaticos.esmadrid.com/cdn/farfuture/BWcvMivTxTmm5LYOUGDmKVLY-o-P8m3C07xjIpbc3b8/mtime:1646730209/sites/default/files/styles/content_type_full/public/widgets/items/images/la_gran_via.jpg?itok=LbHN7qFI" height="200px" width="200"></td>
+
+
+            </tr>
+            
+            <tr>
+            <td>4</td>
+            <td>Monakas</td>
+            <td>Buvau</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Panorama_von_Monaco-La_Turbie.jpg/750px-Panorama_von_Monaco-La_Turbie.jpg" alt=""height="200px" width="200"></td>
+
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>San Marinas</td>
+                <td>Buvau</td>
+                <td><img src="https://cdn.prod.v2.camping.info/media/campsites/centro-vacance-san-marino/E-RS8eM4zLSd.jpg" alt="" height="200px" width="200"> 
+               <td><a href="https://en.wikipedia.org/wiki/San_Marino"></a></td> 
+                </td>
+
+
+
+
+            </tr>
+
+
+    </table>
+    </div>
+
+    <div><!-- Formos --></div>
+    <div>
+<h1>Formos</h1>
+<h3>Tag'ai</h3>
+        <ul>
+<li>Form - Forma</li>
+<li>input - Įvestis</li>
+<li>select - Pasirinkimas iš variantų</li>
+<li>option - Pasirinkimo variantai</li>
+<li> Textarea - didelio teksto kiekio</li>
+<li>Label - Etiketės prie įvesties</li>
+<li>optgroup - Pasirinkimo variantų grupė</li>
+<li>button - Mygtukas</li>
+<li>fieldset - Formos laukas</li>
+<li>legend - Formos lauko pavadinimas</li>
+</ul>
+
+<h3>Atributai</h3>
+<ul>
+    <li>Type - Input tag'o tipas</li>
+    <li>for - Nurodo kuriam įvesties/pasirinkties laukui yra priskirta etiketė</li>
+    <li>id - Unikalus pavadinimas, į kurį nurodo for atributas</li>
+    <li>name - Įvesties lauko vardas, kuris bus perduotas back'ui kartu su tos įvesties reikšme</li>
+    <li>cols - Stulpelių kiekis textarea elemente</li>
+    <li>rows - Eilučių kiekis textarea elemente</li>
+    <li>placeholder - Teksta esantis įvesties lauke, kuris prandingsta pradedant pildyti įvesties lauką</li>
+    <li>value - Įvesties reikšmė, kuri perduodama į back'ą</li>
+    <li>label - priskiria </li>
+    <li>select - Numatytasis select tag'o viduje esantis option'as</li>
+    <li>minlenght - Trumpiausia galima įvestis</li>
+    <li>maxlenght - Ilgiausia galima įvestis</li>
+    <li>min - Mažiausia leistina įvestis</li>
+    <li>max - Didžiausia įvestis</li>
+    <li>step - Žingsnis, kuriuo didėja/mažėja skaičius</li>
+    <li>pattent - Reikalauja, kad įvesties laukelyje būtų parašytas nurodytas formatas (formatas nurodomas regex(regular expresion))</li>
+    <li>checked - Numatytasis radio arba checkbox pasirinkimas</li>
+</ul>
+<form>
+        <div>
+            <span>Pasirinkite pomėgį</span>
+<div>
+            <label for="sportas">Sportas</label>
+            <input type="radio" name="interest" id="sportas" value="sportas" checked>
+</div>
+<div>
+            <label for="filmai">Filmai</label>
+            <input type="radio" name="interest" id="" value="">
+</div>
+<div>
+            <label for="kulinarija">Kulinarija</label>
+            <input type="radio" name="interest" id="" value="">
+         </div>   
+        </div>
+    <div>
+        <label for="kazkam">Kažkas kažka kažkur</label>
+        <input type="url" id="kazkam" name="vardas" placeholder="111-111-aAzZ"required>
+    
+    </div>
+    <div>
+        <label for="pavarde">Pavardė</label>
+        <input type="text" id="pavarde" name="pavarde" required>
+    </div>
+    <div>
+        <textarea name="komentaras" id="komentaras" cols="30" rows="5" placeholder="Palikite savo atsiliepimą..."></textarea>
+    </div>
+    <div>
+        <form>
+        <label for="augintinis">Tavo augintinis</label>
+        <select name="augintinis" id="augintinis">
+            <optgroup label="dideli">
+        <option value="suo" selected>Šuo</option>
+        <option value="kate"selected>Katė</option>
+        </optgroup>
+        <optgroup label="mazi">
+        <option value="ziurkenas" selected>Žiurkėnas</option>
+        </select>
+        </optgroup>
+    </div>
+
+            <button role="submit">Pateikti</button>
+</form>
+<div><!-- formos užduotis -->
+    <h1>Formos Uzduotis</h1>
+    <form id="formosUzduotis">
+            <div>
+                <div>
+                    <div>
+                        <label for="vardas">Vardas/Slapyvardis</label>
+                        <input type="text" id="vardas" name="vardas" placeholder="vardas"placeholder="111-111-aAzZ"required>
+                    
+                    </div>
+                    <div>
+                        <label for="pavarde">Pavardė</label>
+                        <input type="text" id="pavarde" name="pavarde" required>
+<div>
+<label for="slaptazodis">Slaptažodis</label>
+<input type="password" name="slaptazodis" id="slaptazodis" required>
+
+</div>
+                        <div>
+                        <label for="El.paštas">El.paštas</label>
+                        <input type="email" id="El.paštas" name="El.paštas">
+
+                        </div>
+    <div>
+        <span>Pasirinkite savo lytį:</span>
+        </div>
+                <label for="male">Vyras</label>
+                <input type="radio" name="gender" id="male" value="male">
+    </div>
+    <div>
+                <label for="female">Moteris</label>
+                <input type="radio" name="gender" id="female" value="female">
+               
+                <div>
+                    <label for="komentaras">Palikite savo komentara</label><br>
+                    <textarea name="komentaras" id="komentaras" cols="30" rows="10" placeholder="komentaras" required></textarea>
+                </div>
+                
+                <button role="submit">Pateikti</button>
+             </div>   
+            </div>
+            </form>
+    </div>
+
+
+
+    <script>
+        document // kreipiuosi į dokumentą
+        .querySelector('#formosUzduotis') // pasirenku elementą su ID "formosUzduotis"
+        .addEventListener('submit', (event) => { // laukia "submit" įvykio ir vykdo bevardę funkciją
+          event.preventDefault(); // neleidžia formai būti siunčiamai į serverį 
+          console.log(event); // į konsolę išveda formos informaciją
+          event.target.reset(); // išvalo formą
+        });
+      </script>
+    </div>
+</body>
+</html>
